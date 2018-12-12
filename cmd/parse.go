@@ -54,7 +54,7 @@ var (
 
 func getTLDList() map[string]bool {
 	TLDOnce.Do(func() {
-		r, err := os.Open("../resources/tld.txt")
+		r, err := os.Open("resources/tld.txt")
 		if err != nil {
 			return
 		}
